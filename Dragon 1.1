@@ -1,0 +1,21 @@
+
+  int RELAY1 = A0;  // Inputs for Arduino, Yellow
+  int RELAY2 = A1;  // Green
+
+void setup() {
+
+  pinMode(RELAY1, OUTPUT);
+  pinMode(RELAY2, OUTPUT);
+}
+
+void loop() {
+
+  digitalWrite(RELAY1, LOW);  //Low is on
+  delay(3000);
+  digitalWrite(RELAY1, HIGH); //High is off
+  delay(1000);
+  digitalWrite(RELAY2, LOW);
+  delay(1000);
+  digitalWrite(RELAY2, HIGH);
+  delay(5000);
+  }
